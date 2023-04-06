@@ -14,19 +14,26 @@ const PostForm = (props) => {
             post: post,
         };
         console.log(newPost);
+        props.postNewPost(newPost);
     }
     
     return ( 
         <form onSubmit={handleSubmit}>
-            <div>
-                <label>Name</label>
-                <input type='text' value={name} onChange={(event) => setName(event.target.value)} />
+            <div className='form-group row'>
+                <label for="inputName3" className="col-sm-2 col-form-label">Name</label>
+                <div className='col-sm-10'>
+                    <input type='text' className="form-control" id="inputName3" value={name} onChange={(event) => setName(event.target.value)} />
+                </div>
             </div>
-            <div>
-                <label>Post</label>
-                <input type='text' value={post} onChange={(event) => setPost(event.target.value)} />
+            <div className='form-group row'>
+                <label for="colFormLabel" className="col-sm-2 col-form-label">Post</label>
+                <div className='col-sm-10'>
+                    <textarea type='text' rows="2" className="form-control" id="colFormLabel" value={post} onChange={(event) => setPost(event.target.value)} />
+                </div>
             </div>
-            <button type='submit'>Create</button>
+            <div className='col-auto'>
+                <button type='submit' className="btn btn-primary mb-2" style={{'position': 'right'}} >Create</button>
+            </div>
         </form>
 
      );
