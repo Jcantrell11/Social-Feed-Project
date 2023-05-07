@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-// import CreatePost from './Components/CreatePost/CreatePostForm';
 import PostForm from './Components/PostForm/Post';
 import PostList from './Components/PostList/PostList';
 import NavBar from './Components/NavBar/NavBar';
 import './App.css';
+
 
 
 function App() {
@@ -17,13 +17,6 @@ function App() {
   
   
   return (
-    // <><div>
-    //   <NavBar />
-    // </div><><div>
-    //   <PostForm postNewPost={addNewPost} />
-    // </div><div>
-    //       <PostList pastPosts={posts} />
-    //     </div></></>
     <div className='container-fluid'>
       <div className='row'>
         <div className='col-md-12'>

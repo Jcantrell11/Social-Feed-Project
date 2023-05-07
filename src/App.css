@@ -1,21 +1,25 @@
 .border-box {
   border: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: gray;
   margin: 1em;
   padding: 1em;
   background-color: white;
   margin-left: 15em;
   margin-right: 15em;
   overflow-wrap:normal;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px gray;
 }
 
 .col-md-12 {
   background-color: #E2F2EE;
+  display: grid;
 }
 
 .navbar {
   background-color: white;
+  /* display: grid; */
 }
 
 .form-group{
@@ -24,4 +28,8 @@
 
 .col-sm-10{
   padding: 0.25em;
+}
+
+.col-sm-2 {
+  color: gray
 }
